@@ -1,4 +1,4 @@
-import { Authenticator } from "@aws-amplify/ui-react";
+import { Authenticator, Button } from "@aws-amplify/ui-react";
 
 import "@aws-amplify/ui-react/styles.css";
 
@@ -8,12 +8,13 @@ import { ApiKeyView } from "./ApiKeyView";
 
 function SignOutButton() {
   return (
-    <button
+    <Button
+      variation="destructive"
       onClick={() => signOut()}
-      style={{ position: "fixed", bottom: 5, left: 5 }}
+      style={{ position: "fixed", bottom: 15, left: 15 }}
     >
       SIGN OUT
-    </button>
+    </Button>
   );
 }
 
